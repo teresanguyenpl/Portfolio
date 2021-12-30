@@ -1,9 +1,19 @@
 import React from 'react'
+import Navbar from './Navbar'
+import Line from './Line'
+import Social from './Social'
+import HomeText from './HomeText'
+import Dots from './Dots'
 
 const Home = () => {
     return (
         <div>
-           <h1>This is home</h1>
+           <Navbar />
+           <Line />
+           <Dots />
+           <Social />
+           <HomeText />
+           
         </div>
     )
 }

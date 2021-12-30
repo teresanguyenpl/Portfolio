@@ -14,12 +14,29 @@ a {
     color: ${gold};
     padding: 0 0 15px 0;
 }
+
+opacity: 0;
+animation: fadeIn 3s;
+animation-fill-mode: forwards;
 `
 
 const StraightLine = styled.span`
 width: 1px;
-height: 8rem;
+height: 0;
 background-color: ${gold};
+
+animation: slideUp 3s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+
+@keyframes slideUp {
+    from {
+        height: 0;
+    }
+    to {
+        height: 8rem;
+    }
+}
 `
 
 const Social = () => {

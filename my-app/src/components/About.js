@@ -1,9 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const About = () => {
     return (
         <div>
-            <h1>This is about</h1>
+            <Navbar />
         </div>
     )
 }

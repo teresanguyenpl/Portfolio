@@ -13,6 +13,10 @@ top: 45%;
 font-weight: 100;
 font-size: 55px;
 color: ${gray};
+
+opacity: 0;
+animation: fadeIn 3s;
+animation-fill-mode: forwards;
 `
 
 const HalfRight  = styled.h1`
@@ -22,6 +26,11 @@ top: 45%;
 font-weight: 100;
 font-size: 55px;
 color: ${gold};
+
+opacity: 0;
+animation: fadeIn 3s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
 `
 
 const Bottom  = styled.h1`
@@ -34,6 +43,10 @@ color: ${gray};
 span {
     color: ${blue};
 }
+opacity: 0;
+animation: fadeIn 3s;
+animation-delay: 4s;
+animation-fill-mode: forwards;
 `
 
 const HomeText = () => {

@@ -55,7 +55,7 @@ height: 0;
 background-color: ${gray};
 
 animation: slideDownSmall 3s;
-animation-delay: 2s;
+animation-delay: 1s;
 animation-fill-mode: forwards;
 
 @keyframes slideDownSmall {
@@ -77,7 +77,7 @@ height: 0;
 background-color: ${gray};
 
 animation: slideDownSmall 3s;
-animation-delay: 2s;
+animation-delay: 1s;
 animation-fill-mode: forwards;
 `
 
@@ -90,7 +90,7 @@ height: 0;
 background-color: ${gray};
 
 animation: slideDownSmall 3s;
-animation-delay: 2s;
+animation-delay: 1s;
 animation-fill-mode: forwards;
 `
 

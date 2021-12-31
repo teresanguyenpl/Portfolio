@@ -7,7 +7,7 @@ position: fixed;
 display: flex;
 flex-direction: column;
 bottom: 0;
-left: 4rem;
+left: 4%;
 align-items: center;
 a {
     text-decoration: none;
@@ -26,7 +26,7 @@ height: 0;
 background-color: ${gold};
 
 animation: slideUp 3s;
-animation-delay: 2s;
+animation-delay: 1s;
 animation-fill-mode: forwards;
 
 @keyframes slideUp {

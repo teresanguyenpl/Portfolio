@@ -11,7 +11,7 @@ height: 0;
 background-color: ${gold};
 
 animation: slideDown 3s;
-animation-delay: 2s;
+animation-delay: 1s;
 animation-fill-mode: forwards;
 
 @keyframes slideDown {

@@ -16,7 +16,7 @@ border-right: 1px solid ${gray};
 border-left: 1px solid ${gray};
 
 opacity: 0;
-animation: fadeIn 3s;
+animation: fadeIn 1s;
 animation-fill-mode: forwards;
 
 @keyframes fadeIn {

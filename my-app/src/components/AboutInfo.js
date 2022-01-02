@@ -48,7 +48,6 @@ const AboutInfo = () => {
     return (
         <AboutContain>
             <Picture>
-                
             </Picture>
             <Info>
                 <Text>I’m an <span>undergraduate</span> student</Text> 

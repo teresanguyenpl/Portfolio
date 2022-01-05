@@ -36,7 +36,7 @@ h3:hover {
 const Copyright = styled.div`
 position: fixed;
 width: 100%;
-font-size: 24px;
+font-size: 17px;
 bottom: 0;
 h4 {
     text-align: center;

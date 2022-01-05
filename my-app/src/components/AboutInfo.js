@@ -1,33 +1,54 @@
 import React from 'react'
 import styled from 'styled-components';
 import { gold, blue, gray } from "./Styles";
-import avt from '../assets/Images/avt.jpg'
+import Avt from '../assets/Images/Avt.jpg'
 
 const AboutContain = styled.div`
 position: absolute;
-width: 75%;
-top: 50%;
+width: 70%;
+top: 55%;
 left: 50%;
 transform: translate(-50%, -50%);
 `
 const Picture = styled.div`
-position: relative;
-background-image: url(${avt});
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+position: absolute;
 float: left;
-width: 40%;
-height: 300px;
-opacity: 0.8;
-mix-blend-mode: screen;
+width: 50%;
+height: 350px;
+
+img {
+    position: relative;
+    width: auto;
+    height: 90%;
+    opacity: 0.8;
+}
+
+div {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 300px;
+    background-color: #364859;
+    height: 90%;
+}
+
+:hover {
+    img {
+        left: 2%;
+        opacity: 0.9;
+    }
+    div {
+        background-color: #1F3041;
+        top: 8%;
+    }
+}
 `
 
 const Info = styled.div`
 position: relative;
 float: right;
-width: 60%;
-height: 300px;
+width: 50%;
+height: 350px;
 text-align: center;
 color: ${gray};
 `
@@ -48,6 +69,8 @@ const AboutInfo = () => {
     return (
         <AboutContain>
             <Picture>
+                <div />
+                <img src={Avt} />
             </Picture>
             <Info>
                 <Text>I’m an <span>undergraduate</span> student</Text> 

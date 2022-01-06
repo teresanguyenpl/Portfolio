@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import GlobalStyle from "./globalStyles";
+
 
 // Components
 import Home from "./components/Home";

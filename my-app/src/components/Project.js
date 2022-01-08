@@ -13,29 +13,24 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa"
 
 const images = [Cleverchat, TheForm, Shopfies]
 
-const Container = styled.div`
-    width: 50%;
-    margin: 7rem auto;
-    .slide {
-        transform: scale(0.2);
-        transition: transform 300ms;
-        opacity: 0.5;
-        img {
-            width: 20rem;
-            margin: 0 auto;
-        }
-    }
-    .activeSlide {
-        transform: scale(1.1);
-        opacity: 1;
-    }
-    .arrow {
-        background-color: ${gold};
-        position: absolute;
-        cursor: pointer;
-        z-index: 10;
+const Wrapper = styled.div`
+`
 
-    }
+const Card = styled.div`
+
+`
+
+const Image = styled.div`
+`
+
+const SocialIcon = styled.div`
+`
+
+const Describe = styled.div`
+
+`
+
+const More = styled.div`
 `
 
 function Project() {
@@ -62,23 +57,61 @@ function Project() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-        beforeChange: (current, next) => setImageIndex(next)
+        centerMode: true
     };
     return (
-        <Container>
-            <Slider {...settings}>
-                {images.map((img, index) => (
-                    <div className={index === imageIndex ? "slide activeSlide" : "slide"}>
-                        <img src={img} alt={img}/>
-                    </div>
-                ))}
-            </Slider>
-        </Container>
+        <Slider {...settings}>
+            <Wrapper>
+                <Card>
+                    <Image>
+                        <img src={Cleverchat}></img>
+                    </Image>
+                    <SocialIcon>
+                        <a href='https://github.com/teresanguyenpl' target="_blank" className='fab fa-github fa-lg'> </a>
+                    </SocialIcon>
+                    <Describe>
+                        <h2>Title <span>Used: </span></h2>
+                    </Describe>
+                    <More>
+                        <button>Learn More</button>
+                    </More>
+                </Card>
+            </Wrapper>
+            <Wrapper>
+                <Card>
+                    <Image>
+                        <img src={TheForm}></img>
+                    </Image>
+                    <SocialIcon>
+                        <a href='https://github.com/teresanguyenpl' target="_blank" className='fab fa-github fa-lg'> </a>
+                    </SocialIcon>
+                    <Describe>
+                        <h2>Title <span>Used: </span></h2>
+                    </Describe>
+                    <More>
+                        <button>Learn More</button>
+                    </More>
+                </Card>
+            </Wrapper>
+            <Wrapper>
+                <Card>
+                    <Image>
+                        <img src={Shopfies}></img>
+                    </Image>
+                    <SocialIcon>
+                        <a href='https://github.com/teresanguyenpl' target="_blank" className='fab fa-github fa-lg'> </a>
+                    </SocialIcon>
+                    <Describe>
+                        <h2>Title <span>Used: </span></h2>
+                    </Describe>
+                    <More>
+                        <button>Learn More</button>
+                    </More>
+                </Card>
+            </Wrapper>
+        </Slider>
     )
 }
 

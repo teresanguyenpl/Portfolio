@@ -1,8 +1,8 @@
 //This class contains the information of each project
 
-import Cleverchat from '../assets/Images/Cleverchat.jpg'
-import TheForm from '../assets/Images/Form.jpg'
-import Shopfies from '../assets/Images/Shopfies.jpg'
+import Cleverchat from '../assets/Images/CC.jpg'
+import TheForm from '../assets/Images/Forms.jpg'
+import Shopfies from '../assets/Images/Shop.jpg'
 
 export const ProjectItems = [
     {

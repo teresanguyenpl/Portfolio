@@ -13,6 +13,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding-top: 8rem;
+padding-bottom: 8rem;
 `
 
 const Grid = styled.div`

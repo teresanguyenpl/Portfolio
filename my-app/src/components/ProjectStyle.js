@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { gold, blue, gray } from "./Styles";
+import { gold, gray } from "./Styles";
 
 const Contain = styled(NavLink)`
 width: calc(10rem + 15vw);
@@ -14,6 +14,12 @@ box-shadow: 0 0 1rem 0 black;
 
 :hover {
     box-shadow: 0 0 1rem 0 gold;
+    h5 {
+        color: white;
+    }
+    h3 {
+        text-shadow: 0 0 10px #fff;
+    }
 }
 `
 
@@ -33,13 +39,18 @@ text-align: center;
 color: ${gold};
 `
 
+
 const Used = styled.h5`
 padding-top: 0.1rem;
+color: ${gray};
+font-weight: 100;
 `
 
 
-const Date = styled.h6`
+const Date = styled.h5`
 padding-top: 0.1rem;
+color: ${gray};
+font-weight: 100;
 `
 
 const ProjectItems = (props) => {

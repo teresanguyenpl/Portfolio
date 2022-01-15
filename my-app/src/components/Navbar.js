@@ -115,6 +115,27 @@ const Navbar = () => {
             setContactColor(gold)
         }
     })
+
+    //Hide the 3 small lines while scrolling
+    const [isVisible, setIsVisible] = React.useState(true);
+    
+    React.useEffect(() => {   
+        window.addEventListener("scroll", listenToScroll);
+        return () => 
+           window.removeEventListener("scroll", listenToScroll); 
+      }, [])
+    const listenToScroll = () => {
+        let heighToHideBars = 5;
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+       
+        if(winScroll > heighToHideBars) {
+            isVisible && setIsVisible(false);
+        }
+        else {
+            setIsVisible(true);
+        }
+    };
+
     return (
         <Contain>
             <ul>
@@ -133,9 +154,21 @@ const Navbar = () => {
                 <li className='fab fa-connectdevelop' style={{ color: contactColor}}></li>
                 <a href='/Contact' style={{ color: contactColor}}>Contact</a>
             </ul>
-            <SmallLine1 />
-            <SmallLine2 />
-            <SmallLine3 />
+            {
+                isVisible
+                &&
+                <SmallLine1></SmallLine1>
+            }
+            {
+                isVisible
+                &&
+                <SmallLine2></SmallLine2>
+            }
+            {
+                isVisible
+                &&
+                <SmallLine3></SmallLine3>
+            }
         </Contain>
     )
 }

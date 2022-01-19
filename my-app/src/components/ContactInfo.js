@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { gold, blue, gray } from "./Styles";
+import { gold, blue } from "./Styles";
 
 const Container = styled.div`
 position: absolute;

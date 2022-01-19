@@ -7,6 +7,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import Cleverchat from "./components/Cleverchat";
+
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route element={<About />} path="/about" />
         <Route element={<Contact />} path="/contact" />
         <Route element={<Projects />} path="/projects" />
+        <Route element={<Cleverchat />} path="/projects/cleverchat" />
+        <Route element={<Home />} path="/projects/portfolio" />
       </Routes>
     </BrowserRouter>
   )

@@ -40,7 +40,7 @@ export const ProjectItems = [
         used: "ReactJS, Styled-component",
         date: "January 2022",
         img: Portfolio,
-        link: ""
+        link: "Portfolio"
         // link: "https://github.com/teresanguyenpl/Portfolio"
     }
 ]

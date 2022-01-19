@@ -39,7 +39,6 @@ text-align: center;
 color: ${gold};
 `
 
-
 const Used = styled.h5`
 padding-top: 0.1rem;
 color: ${gray};

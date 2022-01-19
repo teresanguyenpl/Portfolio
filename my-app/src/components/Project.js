@@ -1,8 +1,4 @@
 import React from 'react'
-import { gold, blue, gray } from "./Styles";
-import { useState } from 'react'
-import { renderMatches } from 'react-router'
-import Slider from 'react-slick'
 import styled from 'styled-components'
 
 import { ProjectItems } from './ProjectItem';

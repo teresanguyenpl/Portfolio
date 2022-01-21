@@ -1,12 +1,20 @@
+/** 
+ * Cleverchat page includes the icon, description, languages that this project used
+ * and the links to github (both front-end and back-end) + youtube (demo)
+*/
+
 import React from 'react'
 import styled from 'styled-components'
 import Social from './Social'
 import { gold, gray, blue } from "./Styles";
+//Image
 import CleverChat from '../assets/Images/Cleverchat.jpg'
+//React Icons
 import { GrHeroku, GrNode } from "react-icons/gr"
 import { SiJavascript, SiPostman, SiPostgresql } from "react-icons/si"
-import { AiFillAndroid, AiFillYoutube } from "react-icons/ai"
+import { AiFillAndroid, AiFillYoutube, AiFillGithub } from "react-icons/ai"
 import { DiJava } from "react-icons/di"
+import { VscGithub } from "react-icons/vsc"
 
 const Image = styled.div`
 position: absolute;
@@ -72,7 +80,7 @@ ul > li {
 
 const Demo = styled.div`
 position: absolute;
-top: 45rem;
+top: 48rem;
 right: 4rem;
 opacity: 0;
 animation: fadeIn 3s;
@@ -122,9 +130,11 @@ const Cleverchat = () => {
             <Demo>
                 <ul>
                     <li><a href='https://www.youtube.com/watch?v=Orsehisceew' target="_blank"><AiFillYoutube size={50} /></a></li>
+                    <li><a href='https://github.com/teresanguyenpl/CleverChat-Front' target="_blank"><AiFillGithub size={50} /></a></li>
+                    <li><a href='https://github.com/teresanguyenpl/CleverChat-Back' target="_blank"><VscGithub size={50} /></a></li>
                     <li><h3>Demo</h3></li>
                 </ul>
-            </Demo>
+            </Demo> 
         </div>
     )
 }

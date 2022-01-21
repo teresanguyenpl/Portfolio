@@ -13,8 +13,6 @@ export const ProjectItems = [
         date: "Nov 2021 - Dec 2021",
         img: Cleverchat,
         link: "Cleverchat"
-        // link: "https://github.com/teresanguyenpl/CleverChat-Front",
-        // link2: "https://github.com/teresanguyenpl/CleverChat-Back"
     },
     {
         id: 2,
@@ -23,7 +21,6 @@ export const ProjectItems = [
         date: "Dec 2021 - Jan 2022",
         img: TheForm,
         link: "Form"
-        // link: "https://github.com/teresanguyenpl/CleverChat-Front"
     },
     {
         id: 3,
@@ -32,7 +29,6 @@ export const ProjectItems = [
         date: "Nov 2021 - Dec 2021",
         img: Shopfies,
         link: "Shopfies"
-        // link: "https://github.com/teresanguyenpl/Shopfies-1"
     },
     {
         id: 4,
@@ -41,6 +37,5 @@ export const ProjectItems = [
         date: "January 2022",
         img: Portfolio,
         link: "Portfolio"
-        // link: "https://github.com/teresanguyenpl/Portfolio"
     }
 ]

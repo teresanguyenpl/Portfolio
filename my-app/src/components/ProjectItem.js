@@ -17,8 +17,8 @@ export const ProjectItems = [
     {
         id: 2,
         name: "Login - Register Forms",
-        used: "Html, Css, JavaScript",
-        date: "Dec 2021 - Jan 2022",
+        used: "Html, Css",
+        date: "Jan 2022",
         img: TheForm,
         link: "Form"
     },

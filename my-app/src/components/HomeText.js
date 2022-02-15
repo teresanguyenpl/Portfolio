@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { gray, gold, blue } from "./Styles";
+import { devices } from './DeviceSize'
 
 const Text = styled.div`
 width: 100%;
@@ -8,15 +9,25 @@ width: 100%;
 
 const HalfLeft  = styled.h1`
 position: fixed;
-margin-left: 25%;
+margin-left: 30%;
 top: 45%;
 font-weight: 100;
-font-size: 55px;
 color: ${gray};
+font-size: 60px;
 
 opacity: 0;
 animation: fadeIn 3s;
 animation-fill-mode: forwards;
+
+
+@media ${devices.laptopL} {
+    font-size: 55px;
+    margin-left: 25%;
+}
+@media ${devices.laptop} {
+    font-size: 40px;
+}
+
 `
 
 const HalfRight  = styled.h1`

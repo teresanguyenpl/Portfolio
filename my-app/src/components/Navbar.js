@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { gold, blue, gray } from "./Styles";
+import { devices } from './DeviceSize'
 
 
 const Contain = styled.div`
@@ -43,6 +44,11 @@ ul {
 
 ul:hover {
     
+}
+
+@media ${devices.laptop} {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 `
 

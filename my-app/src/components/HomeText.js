@@ -8,9 +8,9 @@ width: 100%;
 `
 
 const HalfLeft  = styled.h1`
-position: fixed;
+position: relative;
 margin-left: 30%;
-top: 45%;
+top: 220px;
 font-weight: 100;
 color: ${gray};
 font-size: 60px;
@@ -22,7 +22,8 @@ animation-fill-mode: forwards;
 
 @media ${devices.laptopL} {
     font-size: 55px;
-    margin-left: 25%;
+    top: 220px;
+    margin-left: 27%;
 }
 @media ${devices.laptop} {
     font-size: 40px;

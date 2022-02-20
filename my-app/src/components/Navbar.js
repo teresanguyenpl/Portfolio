@@ -7,7 +7,6 @@ import { devices } from './DeviceSize'
 const Contain = styled.div`
 display: flex;
 flex-direction: row;
-gap: 50px;
 margin-top: 50px;
 margin-left: 20%;
 margin-right: 20%;
@@ -50,6 +49,21 @@ ul:hover {
     margin-left: 15%;
     margin-right: 15%;
 }
+@media ${devices.tablet} {
+    margin-left: 12%;
+    margin-right: 12%;
+    ul {
+        li {
+            font-size: 15px;
+        }
+        a {
+            font-size: 13px;
+        }
+    }
+}
+@media ${devices.mobileL} {
+    
+}
 `
 
 const SmallLine1 = styled.div`
@@ -72,6 +86,13 @@ animation-fill-mode: forwards;
         height: 45px;
     }
 }
+
+@media ${devices.laptop} {
+    left: 31%;
+}
+@media ${devices.tablet} {
+    width: 6px;
+}
 `
 
 const SmallLine2 = styled.div`
@@ -85,6 +106,13 @@ background-color: ${gray};
 animation: slideDownSmall 3s;
 animation-delay: 1s;
 animation-fill-mode: forwards;
+
+@media ${devices.laptop} {
+    right: 31%;
+}
+@media ${devices.tablet} {
+    width: 6px;
+}
 `
 
 const SmallLine3 = styled.div`
@@ -98,6 +126,10 @@ background-color: ${gray};
 animation: slideDownSmall 3s;
 animation-delay: 1s;
 animation-fill-mode: forwards;
+
+@media ${devices.tablet} {
+    width: 6px;
+}
 `
 
 const Navbar = () => {

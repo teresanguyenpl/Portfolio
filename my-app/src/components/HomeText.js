@@ -10,7 +10,7 @@ width: 100%;
 const HalfLeft  = styled.h1`
 position: relative;
 margin-left: 30%;
-top: 220px;
+top: 13.5rem;
 font-weight: 100;
 color: ${gray};
 font-size: 60px;
@@ -19,36 +19,52 @@ opacity: 0;
 animation: fadeIn 3s;
 animation-fill-mode: forwards;
 
-
 @media ${devices.laptopL} {
-    font-size: 55px;
-    top: 220px;
+    font-size: 50px;
+    top: 14.5rem;
     margin-left: 27%;
 }
 @media ${devices.laptop} {
-    font-size: 40px;
+    position: absolute;
+    font-size: 45px;
+    top: 23.5rem;
+    margin-left: 23%;
 }
-
+@media ${devices.tablet} {
+    display: none;
+}
 `
 
 const HalfRight  = styled.h1`
-position: fixed;
+position: relative;
 margin-left: 52%;
-top: 45%;
+top: 6.5rem;
 font-weight: 100;
-font-size: 55px;
+font-size: 60px;
 color: ${gold};
 
 opacity: 0;
 animation: fadeIn 3s;
 animation-delay: 2s;
 animation-fill-mode: forwards;
+
+@media ${devices.laptopL} {
+    font-size: 50px;
+    top: 8.7rem;
+}
+@media ${devices.laptop} {
+    font-size: 40px;
+    top: 15.7rem;
+}
+@media ${devices.tablet} {
+    display: none;
+}
 `
 
 const Bottom  = styled.h1`
 position: relative;
 text-align: center;
-top: 350px;
+top: 12rem;
 font-weight: 100;
 font-size: 40px;
 color: ${gray};
@@ -57,8 +73,38 @@ span {
 }
 opacity: 0;
 animation: fadeIn 3s;
-animation-delay: 4s;
+animation-delay: 3.5s;
 animation-fill-mode: forwards;
+
+@media ${devices.laptopL} {
+    font-size: 35px;
+    top: 15rem;
+}
+@media ${devices.laptop} {
+    font-size: 30px;
+    
+}
+@media ${devices.tablet} {
+    font-size: 23px;
+}
+`
+
+const Top = styled.h1`
+display: none;
+
+@media ${devices.tablet} {
+    position: relative;
+    display: block;
+    font-weight: 100;
+    font-size: 35px;
+    text-align: center;
+    color: ${gold};
+    top: 200px;
+    span {
+        color: ${gray};
+        font-size: 32px;
+    }
+}
 `
 
 const HomeText = () => {
@@ -70,6 +116,9 @@ const HomeText = () => {
             <HalfRight>
                 eresa Nguyen
             </HalfRight>
+            <Top>
+                <span>Hi, I'm</span> Teresa Nguyen
+            </Top>
             <Bottom>
                 I love <span>Technology</span> and <span>Design</span>
             </Bottom>

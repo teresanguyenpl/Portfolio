@@ -46,7 +46,7 @@ const Social = () => {
                 <a href='https://github.com/teresanguyenpl' target="_blank" className='fab fa-github fa-lg'> </a>
             </div>
             <div>
-                <a href='#' target="_blank" className='fab fa-linkedin-in fa-lg'> </a>
+                <a href='https://www.linkedin.com/in/teresa-nguyen-3657281b9/' target="_blank" className='fab fa-linkedin-in fa-lg'> </a>
             </div>
             <StraightLine />
         </Icons>

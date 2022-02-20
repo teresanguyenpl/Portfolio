@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { gold } from "./Styles";
+import { devices } from './DeviceSize'
 
 const MyLine = styled.div`
-position: fixed;
+position: absolute;
 top: 50px;
 left: 50%;
 width: 15px;
@@ -19,8 +20,11 @@ animation-fill-mode: forwards;
         height: 0;
     }
     to {
-        height: 50%;
+        height: 25rem;
     }
+}
+@media ${devices.tablet} {
+    display: none;
 }
 `;
 
@@ -28,7 +32,7 @@ animation-fill-mode: forwards;
 const Line = () => {
     return (
         <div>
-        <MyLine />
+            <MyLine />
         </div>
         
     )

@@ -9,7 +9,7 @@ width: 100%;
 
 const HalfLeft  = styled.h1`
 position: relative;
-margin-left: 30%;
+margin-left: 26%;
 top: 13.5rem;
 font-weight: 100;
 color: ${gray};
@@ -22,13 +22,12 @@ animation-fill-mode: forwards;
 @media ${devices.laptopL} {
     font-size: 50px;
     top: 14.5rem;
-    margin-left: 27%;
+    margin-left: 25%;
 }
 @media ${devices.laptop} {
     position: absolute;
-    font-size: 45px;
-    top: 23.5rem;
-    margin-left: 23%;
+    top: 23rem;
+    margin-left: 17%;
 }
 @media ${devices.tablet} {
     display: none;
@@ -53,8 +52,8 @@ animation-fill-mode: forwards;
     top: 8.7rem;
 }
 @media ${devices.laptop} {
-    font-size: 40px;
-    top: 15.7rem;
+    // font-size: 40px;
+    top: 14.7rem;
 }
 @media ${devices.tablet} {
     display: none;
@@ -81,11 +80,11 @@ animation-fill-mode: forwards;
     top: 15rem;
 }
 @media ${devices.laptop} {
-    font-size: 30px;
-    
+    top: 21rem;
 }
 @media ${devices.tablet} {
     font-size: 23px;
+    top: 14rem;
 }
 `
 
@@ -99,7 +98,7 @@ display: none;
     font-size: 35px;
     text-align: center;
     color: ${gold};
-    top: 200px;
+    top: 10rem;
     span {
         color: ${gray};
         font-size: 32px;

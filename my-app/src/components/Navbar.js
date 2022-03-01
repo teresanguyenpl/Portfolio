@@ -8,8 +8,8 @@ const Contain = styled.div`
 display: flex;
 flex-direction: row;
 margin-top: 50px;
-margin-left: 20%;
-margin-right: 20%;
+margin-left: 15%;
+margin-right: 15%;
 border-bottom: 0.01em solid ${gray};
 border-top: 5px solid ${gold};
 border-right: 1px solid ${gray};
@@ -37,6 +37,7 @@ ul {
     overflow: hidden;
     padding: 5px 10px;
     a {
+        font-size: 20px;
         text-decoration: none;
     }
 }
@@ -46,15 +47,20 @@ ul:hover {
 }
 
 @media ${devices.laptop} {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+    ul {
+        a {
+            font-size: 17px;
+        }
+    }
 }
 @media ${devices.tablet} {
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 10%;
+    margin-right: 10%;
     ul {
         li {
-            font-size: 15px;
+            font-size: 13px;
         }
         a {
             font-size: 13px;
@@ -62,14 +68,18 @@ ul:hover {
     }
 }
 @media ${devices.mobileL} {
-    
+    ul {
+        a {
+
+        }
+    }
 }
 `
 
 const SmallLine1 = styled.div`
 position: fixed;
 top: 55px;
-left: 35%;
+left: 32%;
 width: 10px;
 height: 0;
 background-color: ${gray};
@@ -88,17 +98,25 @@ animation-fill-mode: forwards;
 }
 
 @media ${devices.laptop} {
-    left: 31%;
+    left: 30%;
 }
 @media ${devices.tablet} {
     width: 6px;
+    @keyframes slideDownSmall {
+        from {
+            height: 0;
+        }
+        to {
+            height: 30px;
+        }
+    }
 }
 `
 
 const SmallLine2 = styled.div`
 position: fixed;
 top: 55px;
-right: 35%;
+right: 32%;
 width: 10px;
 height: 0;
 background-color: ${gray};

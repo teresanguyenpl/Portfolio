@@ -43,7 +43,9 @@ ul {
 }
 
 ul:hover {
-    
+    a {
+        font-size: 21px;
+    }
 }
 
 @media ${devices.laptop} {
@@ -54,23 +56,47 @@ ul:hover {
             font-size: 17px;
         }
     }
+    ul:hover {
+        a {
+            font-size: 18px;
+        }
+    }
 }
 @media ${devices.tablet} {
     margin-left: 10%;
     margin-right: 10%;
     ul {
         li {
-            font-size: 13px;
+            font-size: 15px;
         }
         a {
             font-size: 13px;
         }
     }
+    ul:hover {
+        a {
+            font-size: 14px;
+        }
+    }
 }
 @media ${devices.mobileL} {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+@media ${devices.mobileS} {
+    margin-left: 3%;
+    margin-right: 3%;
     ul {
+        li {
+            font-size: 11px;
+        }
         a {
-
+            font-size: 11px;
+        }
+    }
+    ul:hover {
+        a {
+            font-size: 12px;
         }
     }
 }
@@ -111,6 +137,9 @@ animation-fill-mode: forwards;
         }
     }
 }
+@media ${devices.mobileL} {
+    display: none;
+}
 `
 
 const SmallLine2 = styled.div`
@@ -131,6 +160,9 @@ animation-fill-mode: forwards;
 @media ${devices.tablet} {
     width: 6px;
 }
+@media ${devices.mobileL} {
+    display: none;
+}
 `
 
 const SmallLine3 = styled.div`
@@ -147,6 +179,9 @@ animation-fill-mode: forwards;
 
 @media ${devices.tablet} {
     width: 6px;
+}
+@media ${devices.mobileL} {
+    display: none;
 }
 `
 

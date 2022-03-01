@@ -20,7 +20,7 @@ animation-fill-mode: forwards;
         height: 0;
     }
     to {
-        height: 25rem;
+        height: 25.3rem;
     }
 }
 @media ${devices.tablet} {

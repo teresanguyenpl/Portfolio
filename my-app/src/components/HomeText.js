@@ -52,7 +52,6 @@ animation-fill-mode: forwards;
     top: 8.7rem;
 }
 @media ${devices.laptop} {
-    // font-size: 40px;
     top: 14.7rem;
 }
 @media ${devices.tablet} {
@@ -86,6 +85,14 @@ animation-fill-mode: forwards;
     font-size: 23px;
     top: 14rem;
 }
+@media ${devices.mobileM} {
+    font-size: 20px;
+    top: 11rem;
+}
+@media ${devices.mobileS} {
+    font-size: 17px;
+    top: 9rem;
+}
 `
 
 const Top = styled.h1`
@@ -102,6 +109,17 @@ display: none;
     span {
         color: ${gray};
         font-size: 32px;
+    }
+}
+@media ${devices.mobileM} {
+    font-size: 31px;
+    top: 9rem;
+}
+@media ${devices.mobileS} {
+    font-size: 25px;
+    top: 7rem;
+    span {
+        font-size: 23px;
     }
 }
 `

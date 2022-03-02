@@ -20,7 +20,6 @@ img {
     position: relative;
     width: auto;
     height: 90%;
-    opacity: 0.8;
 }
 
 div {
@@ -42,6 +41,18 @@ div {
         top: 8%;
     }
 }
+
+animation: slideIn 3s;
+animation-fill-mode: forwards;
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
 `
 
 const Info = styled.div`
@@ -51,6 +62,9 @@ width: 50%;
 height: 350px;
 text-align: center;
 color: ${gray};
+
+animation: slideIn 3s;
+animation-fill-mode: forwards;
 `
 
 const Text = styled.h2`

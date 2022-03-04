@@ -133,7 +133,7 @@ animation-fill-mode: forwards;
             height: 0;
         }
         to {
-            height: 30px;
+            height: 35px;
         }
     }
 }

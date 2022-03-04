@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { gold } from "./Styles";
+import { devices } from './DeviceSize'
 
 const Icons = styled.div`
 position: fixed;
@@ -18,6 +19,18 @@ a {
 opacity: 0;
 animation: fadeIn 3s;
 animation-fill-mode: forwards;
+
+@media ${devices.mobileM} {
+    a {
+        font-size: 18px;
+    }
+}
+
+@media ${devices.mobileS} {
+    a {
+        font-size: 16px;
+    }
+}
 `
 
 const StraightLine = styled.span`

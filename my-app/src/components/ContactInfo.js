@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { gold, blue } from "./Styles";
+import { devices } from './DeviceSize'
 
 const Container = styled.div`
 position: absolute;

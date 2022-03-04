@@ -73,7 +73,7 @@ animation-fill-mode: forwards;
 }
 
 @media ${devices.mobileM} {
-    top: 8rem;
+    top: 6rem;
     height: 250px;
 }
 

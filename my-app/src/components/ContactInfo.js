@@ -32,6 +32,40 @@ a {
 h3:hover {
     font-size: 36px;
 }
+
+@media ${devices.tablet} {
+    h1{
+        font-size: 52px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h3:hover {
+        font-size: 30px;
+    }
+}
+@media ${devices.mobileM} {
+    h1 {
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h3:hover {
+        font-size: 22px;
+    }
+}
+@media ${devices.mobileS} {
+    h1 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    h3:hover {
+        font-size: 19px;
+    }
+}
 `
 
 const Copyright = styled.div`
@@ -43,6 +77,12 @@ h4 {
     text-align: center;
     color: ${gold};
     font-weight: 100;
+}
+@media ${devices.mobileM} {
+    font-size: 15px;
+}
+@media ${devices.mobileM} {
+    font-size: 13px;
 }
 `
 const ContactInfo = () => {

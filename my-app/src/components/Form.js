@@ -1,6 +1,6 @@
 /** 
- * Cleverchat page includes the icon, description, languages that this project used
- * and the links to github (both front-end and back-end) + youtube (demo)
+ * Form page includes the icon, description, languages that this project used
+ * and the link to github 
 */
 
 import React from 'react'
@@ -8,13 +8,12 @@ import styled from 'styled-components'
 import Social from './Social'
 import { gold, gray, blue } from "./Styles";
 //Image
-import CleverChat from '../assets/Images/Cleverchat.jpg'
+import Form from '../assets/Images/Form.jpg'
 //React Icons
-import { GrHeroku, GrNode } from "react-icons/gr"
-import { SiJavascript, SiPostman, SiPostgresql } from "react-icons/si"
-import { AiFillAndroid, AiFillYoutube, AiFillGithub } from "react-icons/ai"
-import { DiJava } from "react-icons/di"
-import { VscGithub } from "react-icons/vsc"
+import { AiFillGithub, AiFillHtml5 } from "react-icons/ai"
+import { DiCss3 } from "react-icons/di"
+//Device sizes
+import { devices } from './DeviceSize'
 
 const Image = styled.div`
 position: absolute;
@@ -36,16 +35,17 @@ img {
 }
 `
 
-const Description = styled.h3`
-position: absolute;
-top: 20rem;
-padding: 4rem;
+const Description = styled.h2`
+position: relative;
+top: 23rem;
 font-weight: 100;
+padding: 2rem;
 color: ${gray};
 opacity: 0;
 animation: fadeIn 3s;
 animation-delay: 0.5s;
 animation-fill-mode: forwards;
+text-align: center;
 
 @keyframes fadeIn {
     from {
@@ -54,6 +54,13 @@ animation-fill-mode: forwards;
     to {
         opacity: 1;
     }
+}
+
+@media ${devices.laptop} {
+    font-size: 20px;
+}
+@media ${devices.tablet} {
+    font-size: 17px;
 }
 `
 
@@ -106,35 +113,26 @@ ul > li {
 }
 `
 
-const Cleverchat = () => {
+const TheForm = () => {
     return (
         <div>
             <Social />
             <Image>
-                <img className='image' src={CleverChat} />
+                <img className='image' src={Form} />
             </Image>
             <Description>
-                Cleverchat is an Android application that allows users to register, log in, add friends, 
-                chat with others and see the weather in different locations. This is the final group project 
-                (4 people) for a class that I took in Fall 2021: TCSS 450 - Mobile Application Programming.
+                A responsive and well-designed sign in - sign up form using HTML and CSS
             </Description>
             <Used>
                 <ul>
-                    <li><GrHeroku size={50} /></li>
-                    <li><GrNode size={50} /></li>
-                    <li><SiJavascript size={50} /></li>
-                    <li><SiPostman size={50} /></li>
-                    <li><AiFillAndroid size={50} /></li>
-                    <li><DiJava size={50} /></li>
-                    <li><SiPostgresql size={50} /></li>
+                    <li><AiFillHtml5 size={50} /></li>
+                    <li><DiCss3 size={50} /></li>
                     <li><h3>Used</h3></li>
                 </ul>
             </Used>
             <Demo>
                 <ul>
-                    <li><a href='https://www.youtube.com/watch?v=Orsehisceew' target="_blank"><AiFillYoutube size={50} /></a></li>
-                    <li><a href='https://github.com/teresanguyenpl/CleverChat-Front' target="_blank"><AiFillGithub size={50} /></a></li>
-                    <li><a href='https://github.com/teresanguyenpl/CleverChat-Back' target="_blank"><VscGithub size={50} /></a></li>
+                    <li><a href='https://github.com/teresanguyenpl/SignIn-Signup-Form' target="_blank"><AiFillGithub size={50} /></a></li>
                     <li><h3>Demo</h3></li>
                 </ul>
             </Demo> 
@@ -142,4 +140,4 @@ const Cleverchat = () => {
     )
 }
 
-export default Cleverchat
+export default TheForm

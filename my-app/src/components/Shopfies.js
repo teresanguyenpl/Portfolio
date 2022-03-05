@@ -99,6 +99,9 @@ ul > li {
         text-decoration: none;
         color: ${blue};
     }
+    a:hover {
+        color: ${gold};
+    }
 }
 `
 

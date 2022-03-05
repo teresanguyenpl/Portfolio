@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { gold } from "./Styles";
+import { gold, blue } from "./Styles";
 import { devices } from './DeviceSize'
 
 const Icons = styled.div`
@@ -19,6 +19,10 @@ a {
 opacity: 0;
 animation: fadeIn 3s;
 animation-fill-mode: forwards;
+
+a:hover {
+    color: ${blue};
+}
 
 @media ${devices.mobileM} {
     a {

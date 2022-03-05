@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { gold, gray } from "./Styles";
+import { devices } from './DeviceSize'
 
 const Contain = styled(NavLink)`
 width: calc(10rem + 15vw);
@@ -21,6 +22,26 @@ box-shadow: 0 0 1rem 0 black;
         text-shadow: 0 0 10px #fff;
     }
 }
+@media ${devices.laptop} {
+    width: calc(8.5rem + 15vw);
+    height: 17rem;
+}
+@media ${devices.tablet} {
+    width: calc(13rem + 16vw);
+    height: 20rem;
+}
+@media ${devices.mobileL} {
+    width: calc(11rem + 15vw);
+    height: 17rem;
+}
+@media ${devices.mobileM} {
+    width: calc(8.5rem + 15vw);
+    height: 14rem;
+}
+@media ${devices.mobileS} {
+    width: calc(7em + 15vw);
+    height: 12.5rem;
+}
 `
 
 const Image = styled.div`
@@ -37,12 +58,36 @@ padding-top: 0.3rem;
 font-weight: 100;
 text-align: center;
 color: ${gold};
+
+@media ${devices.laptop} {
+    font-size: 15px;
+}
+@media ${devices.mobileM} {
+    font-size: 13px;
+}
+@media ${devices.mobileS} {
+    font-size: 11px;
+}
 `
 
 const Used = styled.h5`
 padding-top: 0.1rem;
 color: ${gray};
 font-weight: 100;
+
+@media ${devices.laptop} {
+    font-size: 12px;
+}
+
+@media ${devices.tablet} {
+    font-size: 12px;
+}
+@media ${devices.mobileM} {
+    font-size: 10px;
+}
+@media ${devices.mobileS} {
+    font-size: 8.5px;
+}
 `
 
 
@@ -50,6 +95,13 @@ const Date = styled.h5`
 padding-top: 0.1rem;
 color: ${gray};
 font-weight: 100;
+
+@media ${devices.mobileM} {
+    font-size: 10px;
+}
+@media ${devices.mobileS} {
+    font-size: 8.5px;
+}
 `
 
 const ProjectItems = (props) => {

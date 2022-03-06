@@ -66,7 +66,7 @@ text-align: center;
 
 const Used = styled.div`
 position: absolute;
-top: 35rem;
+top: 32rem;
 right: 4rem;
 opacity: 0;
 animation: fadeIn 3s;
@@ -82,12 +82,29 @@ ul > li {
     display: inline-block;
     padding: 1rem;
     color: ${blue};  
+    font-size: 50px;
+}
+@media ${devices.laptop} {
+    h3 {
+        font-size: 40px;
+    }
+    ul > li {
+        font-size: 45px;
+    }
+}
+@media ${devices.mobileL} {
+    h3 {
+        font-size: 35px;
+    }
+    ul > li {
+        font-size: 37px;
+    }
 }
 `
 
 const Demo = styled.div`
 position: absolute;
-top: 48rem;
+top: 45rem;
 right: 4rem;
 opacity: 0;
 animation: fadeIn 3s;
@@ -111,6 +128,23 @@ ul > li {
         color: ${gold};
     }
 }
+@media ${devices.laptop} {
+    top: 43rem;
+    h3 {
+        font-size: 40px;
+    }
+    ul > li {
+        font-size: 45px;
+    }
+}
+@media ${devices.mobileL} {
+    h3 {
+        font-size: 35px;
+    }
+    ul > li {
+        font-size: 37px;
+    }
+}
 `
 
 const TheForm = () => {
@@ -125,8 +159,8 @@ const TheForm = () => {
             </Description>
             <Used>
                 <ul>
-                    <li><AiFillHtml5 size={50} /></li>
-                    <li><DiCss3 size={50} /></li>
+                    <li><AiFillHtml5 /></li>
+                    <li><DiCss3 /></li>
                     <li><h3>Used</h3></li>
                 </ul>
             </Used>

@@ -15,6 +15,12 @@ import { DiCss3 } from "react-icons/di"
 //Device sizes
 import { devices } from './DeviceSize'
 
+const Icon = styled.div`
+@media ${devices.mobileM} {
+    display: none;
+}
+`
+
 const Image = styled.div`
 position: absolute;
 left: 50%;
@@ -31,6 +37,12 @@ img {
     }
     to {
         margin-top: 150%;
+    }
+}
+@media ${devices.mobileS} {
+    img {
+        width: 200px;
+        height: 200px;
     }
 }
 `
@@ -57,10 +69,14 @@ text-align: center;
 }
 
 @media ${devices.laptop} {
-    font-size: 20px;
+    font-size: 24px;
 }
 @media ${devices.tablet} {
     font-size: 17px;
+}
+@media ${devices.mobileS} {
+    font-size: 15px;
+    top: 19rem;
 }
 `
 
@@ -100,6 +116,23 @@ ul > li {
         font-size: 37px;
     }
 }
+@media ${devices.mobileM} {
+    h3 {
+        font-size: 30px;
+    }
+    ul > li {
+        font-size: 30px;
+    }
+}
+@media ${devices.mobileS} {
+    top: 28rem;
+    h3 {
+        font-size: 18px;
+    }
+    ul > li {
+        font-size: 17px;
+    }
+}
 `
 
 const Demo = styled.div`
@@ -119,10 +152,10 @@ h3 {
 ul > li {
     display: inline-block;
     padding: 1rem;
-    color: ${blue};  
     a {
         text-decoration: none;
         color: ${blue};
+        font-size: 50px;
     }
     a:hover {
         color: ${gold};
@@ -134,7 +167,9 @@ ul > li {
         font-size: 40px;
     }
     ul > li {
-        font-size: 45px;
+        a {
+            font-size: 45px;
+        }
     }
 }
 @media ${devices.mobileL} {
@@ -142,7 +177,30 @@ ul > li {
         font-size: 35px;
     }
     ul > li {
-        font-size: 37px;
+        a {
+            font-size: 37px;
+        }
+    }
+}
+@media ${devices.mobileM} {
+    h3 {
+        font-size: 30px;
+    }
+    ul > li {
+        a {
+            font-size: 30px;
+        }
+    }
+}
+@media ${devices.mobileS} {
+    top: 34rem;
+    h3 {
+        font-size: 18px;
+    }
+    ul > li {
+        a {
+            font-size: 17px;
+        }
     }
 }
 `
@@ -150,7 +208,9 @@ ul > li {
 const TheForm = () => {
     return (
         <div>
-            <Social />
+            <Icon>
+                <Social />
+            </Icon>
             <Image>
                 <img className='image' src={Form} />
             </Image>
@@ -166,7 +226,7 @@ const TheForm = () => {
             </Used>
             <Demo>
                 <ul>
-                    <li><a href='https://github.com/teresanguyenpl/SignIn-Signup-Form' target="_blank"><AiFillGithub size={50} /></a></li>
+                    <li><a href='https://github.com/teresanguyenpl/SignIn-Signup-Form' target="_blank"><AiFillGithub /></a></li>
                     <li><h3>Demo</h3></li>
                 </ul>
             </Demo> 

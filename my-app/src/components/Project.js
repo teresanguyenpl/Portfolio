@@ -11,6 +11,19 @@ justify-content: center;
 align-items: center;
 padding-top: 8rem;
 padding-bottom: 8rem;
+opacity: 0;
+animation: fadeIn 3s;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 @media ${devices.laptop} {
     padding-top: 6rem;

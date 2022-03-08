@@ -149,9 +149,6 @@ ul > li {
     color: ${blue};  
     font-size: 50px;
 }
-h2 {
-    display: none;
-}
 @media ${devices.laptop} {
     h3 {
         font-size: 40px;
@@ -267,9 +264,6 @@ ul > li {
 }
 @media ${devices.mobileL} {
     top: 40rem;
-    h3 {
-        font-size: 35px;
-    }
     ul > li {
         a {
             font-size: 37px;
@@ -278,9 +272,6 @@ ul > li {
 }
 @media ${devices.mobileM} {
     top: 37rem;
-    h3 {
-        font-size: 30px;
-    }
     ul > li {
         a {
             font-size: 30px;
@@ -289,9 +280,6 @@ ul > li {
 }
 @media ${devices.mobileS} {
     top: 33rem;
-    h3 {
-        font-size: 18px;
-    }
     ul > li {
         a {
             font-size: 20px;

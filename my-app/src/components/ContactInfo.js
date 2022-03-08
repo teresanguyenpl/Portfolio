@@ -9,6 +9,19 @@ text-align: center;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+opacity: 0;
+animation: fadeIn 3s;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 `
 
 const Info = styled.div`
@@ -77,6 +90,19 @@ h4 {
     text-align: center;
     color: ${gold};
     font-weight: 100;
+}
+opacity: 0;
+animation: fadeIn 3s;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @media ${devices.mobileM} {
     font-size: 15px;

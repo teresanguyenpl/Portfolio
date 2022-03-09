@@ -84,6 +84,7 @@ animation-fill-mode: forwards;
 @media ${devices.tablet} {
     font-size: 23px;
     top: 14rem;
+    animation-delay: 1s;
 }
 @media ${devices.mobileM} {
     font-size: 20px;
@@ -110,6 +111,9 @@ display: none;
         color: ${gray};
         font-size: 32px;
     }
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-fill-mode: forwards;  
 }
 @media ${devices.mobileM} {
     font-size: 31px;

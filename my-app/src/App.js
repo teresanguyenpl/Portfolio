@@ -18,13 +18,13 @@ function App() {
       </GlobalStyle>
       <Routes>
         <Route element={<Home />} path="/" />
-        <Route element={<About />} path="/about" />
-        <Route element={<Contact />} path="/contact" />
-        <Route element={<Projects />} path="/projects" />
-        <Route element={<Cleverchat />} path="/projects/cleverchat" />
-        <Route element={<Home />} path="/projects/portfolio" />
-        <Route element={<Shopfies />} path="/projects/shopfies" />
-        <Route element={<Form />} path="/projects/form" />
+        <Route element={<About />} path="/About" />
+        <Route element={<Contact />} path="/Contact" />
+        <Route element={<Projects />} path="/Projects" />
+        <Route element={<Cleverchat />} path="/Projects/Cleverchat" />
+        <Route element={<Home />} path="/Projects/Portfolio" />
+        <Route element={<Shopfies />} path="/Projects/Shopfies" />
+        <Route element={<Form />} path="/Projects/Form" />
       </Routes>
     </BrowserRouter>
   )

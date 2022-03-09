@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31d6cfe0.css",
+    "main.js": "/static/js/main.b30e89d9.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Avt.jpg": "/static/media/Avt.fc5f35b890b542aef80b.jpg",
+    "static/media/Forms.jpg": "/static/media/Forms.b02ec8822b7e6fb3224a.jpg",
+    "static/media/Form.jpg": "/static/media/Form.6f3f8d2f2ad47161aff8.jpg",
+    "static/media/Cleverchat.jpg": "/static/media/Cleverchat.28441b82bf8f46956602.jpg",
+    "static/media/Shopfies.jpg": "/static/media/Shopfies.ab22ab7c524be3583483.jpg",
+    "static/media/CC.jpg": "/static/media/CC.3b6a07d57c444d6988ab.jpg",
+    "static/media/Shop.jpg": "/static/media/Shop.8332be01da3c9c466823.jpg",
+    "static/media/Portfolio.jpg": "/static/media/Portfolio.6a277d92ecd028111953.jpg",
+    "index.html": "/index.html",
+    "main.b30e89d9.js.map": "/static/js/main.b30e89d9.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.b30e89d9.js"
+  ]
+}

@@ -17,12 +17,12 @@ function App() {
       <GlobalStyle>
       </GlobalStyle>
       <Routes>
-        <Route element={<Home />} path="/" />
+        <Route element={<Home />} exact path="/" />
         <Route element={<About />} path="/About" />
         <Route element={<Contact />} path="/Contact" />
-        <Route element={<Projects />} path="/Projects" />
-        <Route element={<Cleverchat />} path="/Projects/Cleverchat" />
-        <Route element={<Home />} path="/Projects/Portfolio" />
+        <Route element={<Projects />} exact path="/Projects" />
+        <Route element={<Cleverchat />} path="/Cleverchat" />
+        <Route element={<Home />} path="/Portfolio" />
         <Route element={<Shopfies />} path="/Projects/Shopfies" />
         <Route element={<Form />} path="/Projects/Form" />
       </Routes>

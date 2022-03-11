@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { gold, blue, gray } from "./Styles";
+import { gold, blue, gray } from "./Styles"
 import { devices } from './DeviceSize'
+import { Link } from 'react-router-dom'
 
 
 const Contain = styled.div`
@@ -36,14 +37,10 @@ ul {
     text-align: center;
     overflow: hidden;
     padding: 5px 10px;
-    a {
-        font-size: 20px;
-        text-decoration: none;
-    }
 }
 
 ul:hover {
-    a {
+    li {
         font-size: 21px;
     }
 }
@@ -52,12 +49,12 @@ ul:hover {
     margin-left: 10%;
     margin-right: 10%;
     ul {
-        a {
-            font-size: 17px;
+        li {
+            font-size: 16px;
         }
     }
     ul:hover {
-        a {
+        li {
             font-size: 18px;
         }
     }
@@ -69,13 +66,10 @@ ul:hover {
         li {
             font-size: 15px;
         }
-        a {
-            font-size: 13px;
-        }
     }
     ul:hover {
-        a {
-            font-size: 14px;
+        li {
+            font-size: 16px;
         }
     }
 }
@@ -90,16 +84,30 @@ ul:hover {
         li {
             font-size: 11px;
         }
-        a {
-            font-size: 11px;
-        }
     }
     ul:hover {
-        a {
+        li {
             font-size: 12px;
         }
     }
 }
+`
+
+const LinkStyle = styled(Link)`
+    text-decoration: none;
+    font-size: 20px;
+    @media ${devices.laptop} {
+        font-size: 18px;
+    }
+    @media ${devices.tablet} {
+        font-size: 15px;
+    }
+    @media ${devices.mobileM} {
+        font-size: 13px;
+    }
+    @media ${devices.mobileS} {
+        font-size: 11px;
+    }
 `
 
 const SmallLine1 = styled.div`
@@ -231,19 +239,19 @@ const Navbar = () => {
         <Contain>
             <ul>
                 <li className='fas fa-home' style={{ color: homeColor}}></li>
-                <a href='/' style={{ color: homeColor}}>Home</a>
+                <LinkStyle style={{ color: homeColor}} to ="/">Home</LinkStyle>
             </ul>
             <ul>
                 <li className='fas fa-info' style={{ color: aboutColor}}></li>
-                <a href='/About' style={{ color: aboutColor}}>About</a>
+                <LinkStyle style={{ color: aboutColor}} to ="/About">About</LinkStyle>
             </ul>
             <ul>
                 <li className='fas fa-project-diagram' style={{ color: projectsColor}}></li>
-                <a href='/Projects' style={{ color: projectsColor}}>Projects</a>
+                <LinkStyle style={{ color: projectsColor}} to ="/Projects">Projects</LinkStyle>
             </ul>
             <ul>
                 <li className='fab fa-connectdevelop' style={{ color: contactColor}}></li>
-                <a href='/Contact' style={{ color: contactColor}}>Contact</a>
+                <LinkStyle style={{ color: contactColor}} to ="/Contact">Contact</LinkStyle>
             </ul>
             {
                 isVisible

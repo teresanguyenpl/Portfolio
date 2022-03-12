@@ -107,7 +107,7 @@ font-weight: 100;
 const ProjectItems = (props) => {
     const {name, used, date, img, link} = props.project;
     return (
-        <Contain target="_blank" to={link}>
+        <Contain to={link}>
             <Image img={img} />
             <Title>{name}</Title>
             <Used>{used}</Used>

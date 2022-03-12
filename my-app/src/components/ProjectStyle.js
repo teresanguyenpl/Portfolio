@@ -103,7 +103,7 @@ font-weight: 100;
     font-size: 8.5px;
 }
 `
- 
+
 const ProjectItems = (props) => {
     const {name, used, date, img, link} = props.project;
     return (

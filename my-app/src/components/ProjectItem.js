@@ -12,7 +12,7 @@ export const ProjectItems = [
         used: "NodeJS, JavaScript, Heroku, Postman, Android Studio, Java, PostgreSQL",
         date: "Nov 2021 - Dec 2021",
         img: Cleverchat,
-        link: "Cleverchat"
+        link: "/Projects/Cleverchat"
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ export const ProjectItems = [
         used: "Html, Css",
         date: "Jan 2022",
         img: TheForm,
-        link: "Form"
+        link: "/Projects/Form"
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ export const ProjectItems = [
         used: "PHP, Html, Css, GCloud(GCP), Bootstrap",
         date: "Nov 2021 - Dec 2021",
         img: Shopfies,
-        link: "Shopfies"
+        link: "/Projects/Shopfies"
     },
     {
         id: 4,
@@ -36,6 +36,6 @@ export const ProjectItems = [
         used: "ReactJS, Styled-component",
         date: "January 2022",
         img: Portfolio,
-        link: "Portfolio"
+        link: "/"
     }
 ]

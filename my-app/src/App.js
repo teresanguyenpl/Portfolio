@@ -20,10 +20,10 @@ function App() {
         <Route element={<Home />} exact path="/" />
         <Route element={<About />} path="/About" />
         <Route element={<Contact />} path="/Contact" />
-        <Route element={<Projects />} exact path="/Projects" />
-        <Route element={<Cleverchat />} path="/Projects/Cleverchat" />
-        <Route element={<Shopfies />} path="/Projects/Shopfies" />
-        <Route element={<Form />} path="/Projects/Form" />
+        <Route element={<Projects />} path="/Projects" />
+        <Route element={<Cleverchat />} path="/Cleverchat" />
+        <Route element={<Shopfies />} path="/Shopfies" />
+        <Route element={<Form />} path="/Form" />
       </Routes>
     </BrowserRouter>
   )

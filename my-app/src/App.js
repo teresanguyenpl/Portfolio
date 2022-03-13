@@ -10,6 +10,7 @@ import Projects from "./components/Projects";
 import Cleverchat from "./components/Cleverchat";
 import Shopfies from "./components/Shopfies"
 import Form from "./components/Form"
+import Salon from "./components/Salon"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route element={<Cleverchat />} path="/Cleverchat" />
         <Route element={<Shopfies />} path="/Shopfies" />
         <Route element={<Form />} path="/Form" />
+        <Route element={<Salon />} path="/Salon" />
       </Routes>
     </BrowserRouter>
   )

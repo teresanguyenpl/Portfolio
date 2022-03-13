@@ -4,6 +4,7 @@ import Cleverchat from '../assets/Images/CC.jpg'
 import TheForm from '../assets/Images/Forms.jpg'
 import Shopfies from '../assets/Images/Shop.jpg'
 import Portfolio from '../assets/Images/Portfolio.jpg'
+import Salon from '../assets/Images/Salon.jpg'
 
 export const ProjectItems = [
     {
@@ -37,5 +38,13 @@ export const ProjectItems = [
         date: "January 2022",
         img: Portfolio,
         link: "/"
+    },
+    {
+        id: 5,
+        name: "Saigon Hair Salon",
+        used: "Html, Css",
+        date: "January 2022",
+        img: Salon,
+        link: "/Salon"
     }
 ]

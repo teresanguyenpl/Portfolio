@@ -42,7 +42,7 @@ export const ProjectItems = [
     {
         id: 5,
         name: "Saigon Hair Salon",
-        used: "Html, Css",
+        used: "Html, Css, JavaScript",
         date: "January 2022",
         img: Salon,
         link: "/Salon"
